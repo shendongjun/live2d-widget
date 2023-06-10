@@ -3,7 +3,7 @@
 //waifu.css:看板娘的样式表。可以对看板娘的位置布局等做自定义修改
 
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://fastly.jsdelivr.net/gh/shendongjun/live2d-widget@latest/"; //这个是github的cdn镜像
+const live2d_path = "https://fastly.jsdelivr.net/gh/shendongjun/live2d-widget@1.0.7/"; //这个是github的cdn镜像
 // const live2d_path = "https://npm.elemecdn.com/shendongjun-live2dwidget@latest/"; //这个是element镜像
 // const live2d_path = "/live2d-widget/";
 
