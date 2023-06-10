@@ -40,8 +40,9 @@ if (screen.width >= 768) {
 			waifuPath: live2d_path + "waifu-tips.json",
 			// 这里是live2d的后端api设置，没有api是显示不出模型的哦~ （api是后端服务即已经部署过的后端服务，可以通过Vercel部署，自行百度即可，其实挺简单；cdn则是npm的cdn地址；）
 			// apiPath: "https://live2d.fghrsh.net/api/",
-			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
-			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@latest/"
+			// cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
+			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@1.0.6/"
+			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@1.0.5/"
 		});
 	});
 }
