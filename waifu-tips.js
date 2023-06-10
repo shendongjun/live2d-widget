@@ -15,10 +15,9 @@ function loadWidget(config) {
 		console.error("Invalid initWidget argument!");
 		return;
 	}
-	// localStorage.removeItem("waifu-display"); //页面初始化显示live2d
-	localStorage.setItem("waifu-display", Date.now());//页面一开始不显示live2d
+	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
-	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
+	document.body.insertAdjacentHTML("beforeend", `<div id="waifu" style="display: none;">
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="800" height="800"></canvas>
 			<div id="waifu-tool">
@@ -31,11 +30,11 @@ function loadWidget(config) {
 				<span class="fa fa-lg fa-info-circle" style="visibility:hidden"></span>
 			</div>
 		</div>`);
-	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
 	}, 0);
-
+	//设置live2d在页面初始化的时候不显示（如果想要初始化的时候显示live2d，将上面的 waifu  style="display: none;" 删除和下面一行代码删除即可）
+	document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
 	function randomSelection(obj) {
 		return Array.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj;
 	}
