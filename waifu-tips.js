@@ -15,7 +15,8 @@ function loadWidget(config) {
 		console.error("Invalid initWidget argument!");
 		return;
 	}
-	localStorage.removeItem("waifu-display");
+	// localStorage.removeItem("waifu-display"); //页面初始化显示live2d
+	localStorage.setItem("waifu-display", Date.now());//页面一开始不显示live2d
 	sessionStorage.removeItem("waifu-text");
 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
 			<div id="waifu-tips"></div>

@@ -42,7 +42,6 @@ if (screen.width >= 768) {
 			// apiPath: "https://live2d.fghrsh.net/api/",
 			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
 			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@latest/"
-			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@latest/"
 		});
 	});
 }
