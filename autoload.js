@@ -3,8 +3,8 @@
 //waifu.css:看板娘的样式表。可以对看板娘的位置布局等做自定义修改
 
 // 注意：live2d_path 参数应使用绝对路径
-// const live2d_path = "https://fastly.jsdelivr.net/gh/shendongjun/live2d-widget@latest/"; //这个是github的cdn镜像
-const live2d_path = "https://npm.elemecdn.com/shendongjun-live2dwidget@1.0.2/"; //这个是element镜像
+const live2d_path = "https://fastly.jsdelivr.net/gh/shendongjun/live2d-widget@latest/"; //这个是github的cdn镜像
+// const live2d_path = "https://npm.elemecdn.com/shendongjun-live2dwidget@latest/"; //这个是element镜像
 // const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
@@ -40,7 +40,8 @@ if (screen.width >= 768) {
 			waifuPath: live2d_path + "waifu-tips.json",
 			// 这里是live2d的后端api设置，没有api是显示不出模型的哦~ （api是后端服务即已经部署过的后端服务，可以通过Vercel部署，自行百度即可，其实挺简单；cdn则是npm的cdn地址；）
 			// apiPath: "https://live2d.fghrsh.net/api/",
-			cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@1.0.2/"
+			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
+			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@latest/"
 			// cdnPath: "https://npm.elemecdn.com/shendongjun-live2dapi@latest/"
 		});
 	});
