@@ -1,45 +1,16 @@
 # Live2D Widget
 
-![](https://forthebadge.com/images/badges/built-with-love.svg)
-![](https://forthebadge.com/images/badges/uses-html.svg)
-![](https://forthebadge.com/images/badges/made-with-javascript.svg)
-![](https://forthebadge.com/images/badges/contains-cat-gifs.svg)
-![](https://forthebadge.com/images/badges/powered-by-electricity.svg)
-![](https://forthebadge.com/images/badges/makes-people-smile.svg)
-
 ## 特性 Feature
 
 在网页中添加 Live2D 看板娘。兼容 PJAX，支持无刷新加载。  
-Add Live2D widget to web page. Compatible with PJAX.
 
 **警告：本项目使用了大量 ES6 语法，不支持 IE 11 等老旧浏览器。**  
-**WARNING: This project does not support legacy browsers such as IE 11.**
-
-## 示例 Demo
-
-在[米米的博客](https://zhangshuqiao.org)的左下角可查看效果。（注：以下人物模型仅供展示之用，本仓库并不包含任何模型。）
-
-<img src="assets/screenshot-2.png" width="280"><img src="assets/screenshot-3.png" width="280"><img src="assets/screenshot-1.png" width="270">
-
-你也可以在允许的范围内进行二次开发，这里有一些示例
-
-- [demo.html](https://mi.js.org/live2d-widget/demo/demo.html) ，展现基础效果
-- [login.html](https://mi.js.org/live2d-widget/demo/login.html) ，仿 NPM 的登陆界面
-
-## 依赖 Dependencies
-
-本插件需要 Font Awesome 图标支持，请确保相关样式表已在页面中加载。以 Font Awesome v6 为例，请在 `<head>` 中加入：  
-Font Awesome is required for this plugin. Take Font Awesome v6 as an example, please add the following in `<head>`:
-```xml
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
-```
-否则图标将无法正常显示。（如果网页中已经加载了任何版本的 Font Awesome，就不要重复加载了）
 
 ## 使用 Usage
 
 将这一行代码加入 `<head>` 或 `<body>`，即可展现出效果：
 ```xml
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/shendongjun/live2d-widget@latest/autoload.js"></script>
 ```
 如果网站启用了 PJAX，由于看板娘不必每页刷新，因此要注意将相关脚本放到 PJAX 刷新区域之外。
 
