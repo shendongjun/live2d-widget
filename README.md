@@ -15,6 +15,7 @@
 如果网站启用了 PJAX，由于看板娘不必每页刷新，因此要注意将相关脚本放到 PJAX 刷新区域之外。
 
 换句话说，如果你是小白，或者只需要最基础的功能，就只用把这一行代码，连同前面加载 Font Awesome 的一行代码，一起放到 html 的 `<head>` 中即可。  
+
 对于用各种模版引擎（例如 Nunjucks，Jinja 或者 PHP）生成的页面，也要自行修改，方法类似，只是可能略为麻烦。以 [Hexo](https://hexo.io) 为例，需要在主题相关的 ejs 或 njk 模版中正确配置路径，才可以加载。
 
 **但是！我们强烈推荐自己进行配置，否则很多功能是不完整的，并且可能产生问题！**  
@@ -73,69 +74,3 @@ https://example.com/path/to/live2d-widget/
 源文件是对 Hexo 的 [NexT 主题](http://github.com/next-theme/hexo-theme-next)有效的，为了适用于你自己的网页，可能需要自行修改，或增加新内容。  
 **警告：作者不对包括但不限于 `waifu-tips.js` 和 `waifu-tips.json` 文件中的内容负责，请自行确保它们是合适的。**
 
-如果有任何疑问，欢迎提 Issue。如果有任何修改建议，欢迎提 Pull Request。
-
-## 鸣谢 Thanks
-
-<a href="https://www.browserstack.com/"><img height="80" src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo"></a>
-
-> 感谢 BrowserStack 容许我们在真实的浏览器中测试此项目。  
-> Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
-
-<a href="https://www.jsdelivr.com"><img height="80" src="https://raw.githubusercontent.com/jsdelivr/jsdelivr-media/master/default/svg/jsdelivr-logo-horizontal.svg"></a>
-
-> 感谢 jsDelivr 提供的 CDN 服务。  
-> Thanks jsDelivr for providing public CDN service.
-
-代码自这篇博文魔改而来：  
-https://www.fghrsh.net/post/123.html
-
-点击看板娘的纸飞机按钮时，会出现一个彩蛋，这来自于 [WebsiteAsteroids](http://www.websiteasteroids.com)。
-
-## 更多 More
-
-更多内容可以参考：  
-https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02  
-https://github.com/xiazeyu/live2d-widget.js  
-https://github.com/summerscar/live2dDemo
-
-关于后端 API 模型：  
-https://github.com/fghrsh/live2d_api  
-https://github.com/xiazeyu/live2d-widget-models  
-https://github.com/xiaoski/live2d_models_collection
-
-除此之外，还有桌面版本：  
-https://github.com/amorist/platelet  
-https://github.com/akiroz/Live2D-Widget  
-https://github.com/zenghongtu/PPet  
-https://github.com/LikeNeko/L2dPetForMac
-
-以及 Wallpaper Engine：  
-https://github.com/guansss/nep-live2d
-
-## 许可证 License
-
-Released under the GNU General Public License v3  
-http://www.gnu.org/licenses/gpl-3.0.html
-
-本仓库并不包含任何模型，用作展示的所有 Live2D 模型、图片、动作数据等版权均属于其原作者，仅供研究学习，不得用于商业用途。
-
-Live2D 官方网站：  
-https://www.live2d.com/en/  
-https://live2d.github.io
-
-Live2D Cubism Core は Live2D Proprietary Software License で提供しています。  
-https://www.live2d.com/eula/live2d-proprietary-software-license-agreement_en.html  
-Live2D Cubism Components は Live2D Open Software License で提供しています。  
-http://www.live2d.com/eula/live2d-open-software-license-agreement_en.html
-
-> The terms and conditions do prohibit modification, but obfuscating in `live2d.min.js` would not be considered illegal modification.
-
-https://community.live2d.com/discussion/140/webgl-developer-licence-and-javascript-question
-
-## 更新 Update
-
-2018年10月31日，由 fghrsh 提供的原 API 停用，请更新至新地址。参考文章：  
-https://www.fghrsh.net/post/170.html
-
-2020年1月1日起，本项目不再依赖于 jQuery。
